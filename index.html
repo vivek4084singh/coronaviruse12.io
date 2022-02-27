@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <httpProtocol>
+    <customHeaders>
+        <add name="Access-Control-Allow-Origin" value="*" />
+        <add name="Access-Control-Allow-Headers" value="Content-Type" />
+        <add name="Access-Control-Allow-Methods" value="GET, POST, PUT, DELETE, OPTIONS" />
+    </customHeaders>
+</httpProtocol> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="countUp.min.js" type="text/javascript"></script>
+     
+
+    <title>Document</title>
+    <link rel="stylesheet" href="h8.css">
+    <link rel="stylesheet" href="h10a.html">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="h8.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+</head>
+
+<body id="h9">
+    <nav class="navbar">
+        <div id="right">
+            <div id="logo">
+                <span class="material-icons" id="logoc">
+                    coronavirus
+                </span>
+                <div id="logo1">COVID UPDATE</div>
+            </div>
+            <!-- <div id="logo1"></div> -->
+        </div>
+        <div id="left" class="h-nav">
+
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="h10a.html">precaution</a></li>
+             
+            </ul>
+            
+        </div>
+        <div class="burgr">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <div class="body11">
+        <div class="body1">
+           <div class="list1">
+            <a href="h8.html">Lists</a>
+           </div>
+            <div class="body1-sub" data-aos="zoom-out-down">
+                <div id="bihar">bihar</div>
+                <div class="con">
+            </div>
+                <div class="body1-sub12" data-aos="zoom-in">
+                    <div class="body1-sub1">
+                        <div class="con1">confirm</div>
+                        <h4 id="biaca" style="color: red; font-size: none;"></h4>
+                        <h6 id="birw" style="color:#8fc1a3; font-weight: bold;"></h6>
+                    </div>
+                    <div class="body1-sub1">
+                        <div class="con">recover</div>
+                        <h4 id="bir" style="color: lightgreen; font-size: none;"></h4>
+                        <h6 id="bidr" style="color:#8fc1a3; font-weight: bold;"></h6>
+                    </div>
+
+
+                </div>
+                <!-- <div class="body1-sub1"></div> -->
+                <!-- <div class="body1-sub1"></div>
+             <div class="body1-sub1"></div> -->
+                <!-- </div> -->
+
+                <div class="body1-sub121" data-aos="zoom-in">
+                    <div class="body1-sub1">
+                        <div class="con">active</div>
+                        <h4 id="birar"></h4>
+                        <!-- <h6>65666</h6> -->
+                    </div>
+                    <div class="body1-sub1">
+                        <div class="con">&nbsp;death</div>
+                        <h4 id="bird" style="font-size:none; color:#5d7ad2"></h4>
+                        <h6 id="birdd" style="color:#8fc1a3;font-weight: bold;"></h6>
+                    </div>
+
+                </div>
+                <hr id="hr1">
+                <h5 id="h5r">all over india</h5>
+                <div class="body1-sub12" data-aos="zoom-in">
+                    <div class="body1-sub1">
+                        <div class="con">confirm</div>
+                        <h4 id="alloi" style="color: red;"></h4>
+                        <h6 id="alloidc" style="color:#8fc1a3; font-weight: bold;"></h6>
+                    </div>
+                    <div class="body1-sub1">
+                        <div class="con">recover</div>
+                        <h4 id="alloir" style="color: lightgreen;"></h4>
+                        <h6 id="alloidr" style="color:#8fc1a3; font-weight: bold;"></h6>
+                    </div>
+                    <!-- <div class="body1-sub1"></div>
+             <div class="body1-sub1"></div> -->
+
+                    <!--         
+        <div class="body1-sub121" data-aos="zoom-in1">
+             <div class="body1-sub1"></div>
+            <div class="body1-sub1"></div>
+
+        </div>  -->
+                </div>
+                <div class="body1-sub121" data-aos="zoom-in">
+                    <div class="body1-sub1">
+                        <div class="con">active</div>
+                        <h4 id="alloiaa"></h4>
+                         <h4></h4>
+                    </div>
+                    <div class="body1-sub1">
+                        <div class="con">death</div>
+                        <h4 id="alloid" style="color: #5d7ad2;"></h4>
+                        <h6 id="alloidd" style="color:#8fc1a3; font-weight: bold;"></h6>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="body2">
+            <div id="mychatr">
+                <canvas id="myChart" height="400" width="345"></canvas>
+            </div>
+        </div>
+    </div>
+    <footer class="foot1">
+            <div class="left">
+                <div class="reserve" style="font-size: 12px;color: darkgrey;">©2021 All Rights Reserved</div>
+            </div>
+            
+            <div class="right">
+                <div class="reserve1"><a href="https://www.facebook.com/Vivek4084/" target="_blank" style="font-size: 12px;color: darkgrey;">Developed by Vivek Singh.</a></div>
+            </div>
+    
+    </footer>
+
+    <!-- </div> -->
+    <!-- <a href="h8.html">Lists</a> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+            easing: 'ease',
+        });
+
+
+
+//         var ctx = document.getElementById('myChart').getContext('2d');
+// var myChart = new Chart(ctx, {
+//     type: 'line',
+//     data: {
+//         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//         datasets: [{
+//             label: '# of Votes',
+//             data: [12, 19, 3, 5, 2, 3],
+//             backgroundColor: [
+//                 'rgba(255, 99, 132, 0.2)',
+//                 'rgba(54, 162, 235, 0.2)',
+//                 'rgba(255, 206, 86, 0.2)',
+//                 'rgba(75, 192, 192, 0.2)',
+//                 'rgba(153, 102, 255, 0.2)',
+//                 'rgba(255, 159, 64, 0.2)'
+//             ],
+//             borderColor: [
+//                 'rgba(255, 99, 132, 1)',
+//                 'rgba(54, 162, 235, 1)',
+//                 'rgba(255, 206, 86, 1)',
+//                 'rgba(75, 192, 192, 1)',
+//                 'rgba(153, 102, 255, 1)',
+//                 'rgba(255, 159, 64, 1)'
+//             ],
+//             borderWidth: 1
+//         }]
+//     },
+//     options: {
+//         scales: {
+//             y: {
+//                 beginAtZero: true
+//             }
+//         }
+//     }
+// });
+
+     
+
+    </script>
+
+
+</body>
+
+
+</html>
